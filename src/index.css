@@ -1,13 +1,456 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+.container {
+  text-align: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
+
+.button {
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  width: 200px;
+  text-align: center;
+}
+
+.login-btn {
+  background-color: #00b0d6;
+  position: relative;
+  left: 180px;
+
+}
+
+.student-btn {
+  background-color: #e74c3c;
+  position: relative;
+  top: 210px;  
+  left: 180px;
+
+}
+
+.institute-btn {
+  background-color: #8e44ad;
+  position: relative;
+  top: 210px;
+  left: 180px;
+
+
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+
+.user-login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full height */
+}
+
+.login-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px; 
+}
+
+.login-input {
+  padding: 15px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #e0e0e0; /* Light grey for input fields */
+}
+
+.login-input:focus {
+  outline: none; /* Remove outline on focus */
+  background-color: #d0d0d0; /* Slightly darker grey on focus */
+}
+
+.login-button {
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: black; /* Black background for button */
+  color: white; /* White text for button */
+  font-weight: bold;
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.login-button:hover {
+  background-color: #333; /* Darker grey on hover */
+}
+
+
+
+.institute-info-container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 400px;
+}
+
+.institute-info-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.institute-info-input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+  width: 100%;
+  background-color: #ececec;
+}
+
+.institute-info-dropdown {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+  width: 100%;
+  background-color: #ececec;
+}
+
+.institute-info-input::placeholder {
+  color: #888;
+}
+
+.institute-info-map-container {
+  margin-top: 20px;
+}
+
+.institute-info-map {
+  width: 100%;
+  height: 170px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #888;
+}
+
+.institute-info-upload-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.institute-info-upload-btn {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.institute-info-register-btn {
+  margin-top: 30px;
+  padding: 15px;
+  font-size: 18px;
+  width: 200px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.institute-info-register-btn:hover,
+.institute-info-upload-btn:hover {
+  opacity: 0.8;
+}
+
+
+.institute-interface-container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+}
+
+.institute-interface-container h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.institute-interface-button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin: 15px 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #333;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.institute-interface-button:hover {
+  opacity: 0.8;
+}
+
+.vehicle-Info{
+  width: 100%;
+  height: auto;
+}
+
+.add-vehicle-body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.add-vehicle-container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 900px;
+  text-align: center;
+}
+
+.add-vehicle-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.add-vehicle-form {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.add-vehicle-section {
+  width: 48%;
+}
+
+.add-vehicle-group {
+  margin-bottom: 20px;
+}
+
+.add-vehicle-label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.add-vehicle-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  outline: none;
+  background-color: #ececec;
+}
+
+.add-vehicle-file-input {
+  padding: 5px;
+}
+
+.add-vehicle-submit {
+  width: auto;
+  padding: 15px 30px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-vehicle-submit:hover {
+  opacity: 0.8;
+}
+
+.add-vehicle-submit-btn-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.add-vehicle-submit-btn {
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.add-vehicle-submit-btn:hover {
+  opacity: 0.8;
+}
+
+.submit-btn-container {
+  text-align: right;
+  margin-right: 50px;
+}
+
+.submit-btn {
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  opacity: 0.8;
+}
+
+
+.map-container {
+  height: 90vh; /* Adjust height as necessary */
+  width: 100vh; /* Full width */
+  position: relative; /* Optional: helps with positioning */
+}
+
+.driver-interface {
+  height: 100vh; /* Full viewport height */
+  width: 100vh; /* Full viewport width */
+}
+
+.start-route-button {
+  background-color: black;   /* Black background */
+  color: white;              /* White text */
+  padding: 10px 20px;        /* Padding for the button */
+  font-size: 16px;           /* Adjust the font size */
+  border: none;              /* No border */
+  border-radius: 25px;       /* Round corners */
+  cursor: pointer;           /* Pointer cursor on hover */
+  outline: none;             /* Remove the default outline */
+  display: inline-block;     /* Button in the same line */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.start-route-button:hover {
+  background-color: #333;   /* Slightly lighter on hover */
+}
+
+.start-route-button:active {
+  background-color: #111;   /* Darker on click */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Lower the shadow */
+}
+
+
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.signup-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.signup-input {
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 25px;
+  border: none;
+  background-color: #d3d3d3;
+  font-size: 16px;
+  text-align: center;
+}
+
+.signup-button {
+  margin-top: 20px;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.signup-button:hover {
+  background-color: #333;
+}
+
+.vehicle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* background-color: #fff; */
+}
+
+.vehicle-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-decoration: underline;
+  color: black;
+}
+
+.vehicle-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.vehicle-button {
+  padding: 15px 30px;
+  background-color: #d3d3d3;
+  border: none;
+  border-radius: 25px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.vehicle-button:hover {
+  background-color: #bbb;
+}
+
