@@ -1,8 +1,16 @@
-
 .container {
   text-align: center;
 }
 
+h1 {
+  font-size: 40px;
+  color: #333;
+  margin-bottom: 30px;
+  position: relative;
+  top: -220px;
+  right: 0px;
+  text-align: center;
+}
 
 .button-container {
   display: flex;
@@ -98,7 +106,6 @@
 }
 
 
-
 .institute-info-container {
   background-color: white;
   padding: 40px;
@@ -186,6 +193,15 @@
   opacity: 0.8;
 }
 
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+} 
 
 .institute-interface-container {
   background-color: white;
@@ -221,14 +237,9 @@
   opacity: 0.8;
 }
 
-.vehicle-Info{
-  width: 100%;
-  height: auto;
-}
-
 .add-vehicle-body {
   font-family: Arial, sans-serif;
-  background-color: #ffffff;
+  background-color: #f9f9f9;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -241,7 +252,7 @@
   padding: 40px;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  width: 900px;
+  width: 600px;
   text-align: center;
 }
 
@@ -320,8 +331,11 @@
 }
 
 .submit-btn-container {
-  text-align: right;
-  margin-right: 50px;
+  position: absolute;
+  right: 90px;
+  margin-top: 630px;
+  /* text-align: right; */
+  /* margin-right: 50px; */
 }
 
 .submit-btn {
